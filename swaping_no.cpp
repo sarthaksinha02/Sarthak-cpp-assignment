@@ -1,42 +1,37 @@
 #include<iostream>
-
 using namespace std;
-
-class swap
+class Swap
 {
-    
-
     int a,b;
     public:
     void getdata();
     void swapv();
     void display();
+    void setdata(int x, int y);
 };
 
-void swap::getdata()
+void Swap::getdata()
 {
-
     cout<<"Enter two numbers: ";
     cin>>a>>b;
 }
 
-void swap::swapv()
+void Swap::swapv()
 {
-a=a+b;
-b=a-b;
-a=a-b;
+    a=a+b;
+    b=a-b;
+    a=a-b;
 }
 
-void swap::display()
+void Swap::display()
 {
-    cout<<"a="<<a<<"tb=" <<b;
-}
+    cout<<"a="<<a<<"\tb=" <<b<<endl;
+} 
 
 int main()
 {
 
-    swap s1;
-
+    Swap s1;
     s1.getdata();
 
     cout<< "Before swap: ";
